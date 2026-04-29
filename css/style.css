@@ -1,0 +1,245 @@
+/* ========================================
+   ESTILOS GLOBALES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================
+   CONTENEDORES PRINCIPALES
+   ======================================== */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container-login {
+    width: 350px;
+}
+
+.container-register {
+    width: 400px;
+}
+
+.container-dashboard {
+    width: 500px;
+    text-align: center;
+}
+
+/* ========================================
+   TÍTULOS
+   ======================================== */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+h2.dashboard-title {
+    color: #48bb78;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   FORMULARIOS Y CAMPOS
+   ======================================== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* ========================================
+   BOTONES
+   ======================================== */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #5a67d8 0%, #6b46a0 100%);
+}
+
+.btn-success {
+    width: 100%;
+    padding: 12px;
+    background: #48bb78;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-success:hover {
+    background: #38a169;
+}
+
+.btn-danger {
+    padding: 10px 20px;
+    background: #e53e3e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-danger:hover {
+    background: #c53030;
+}
+
+/* ========================================
+   ALERTAS Y MENSAJES
+   ======================================== */
+.error {
+    background: #fed7d7;
+    color: #c53030;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-left: 4px solid #c53030;
+}
+
+.success {
+    background: #c6f6d5;
+    color: #22543d;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-left: 4px solid #22543d;
+}
+
+/* ========================================
+   INFORMACIÓN DEL USUARIO (DASHBOARD)
+   ======================================== */
+.info {
+    background: #f7fafc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+}
+
+.info p {
+    margin: 10px 0;
+    color: #4a5568;
+    font-size: 14px;
+}
+
+.info strong {
+    color: #2d3748;
+    display: inline-block;
+    width: 140px;
+}
+
+/* ========================================
+   TABLAS
+   ======================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background: #f7fafc;
+    color: #2d3748;
+    font-weight: bold;
+}
+
+tr:hover {
+    background: #f7fafc;
+}
+
+/* ========================================
+   ENLACES
+   ======================================== */
+a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #5a67d8;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 480px) {
+    .container-login,
+    .container-register,
+    .container-dashboard {
+        width: 90%;
+        padding: 25px;
+    }
+    
+    .info strong {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
